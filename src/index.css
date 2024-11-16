@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,body{
+  background-color: #fff;
+  font-family: 'Poppins';    
+  text-shadow: none !important;
+}
+.carousel-indicators
+{
+display: none !important;
+}
+.header_container {
+border: solid #004d64 3px !important;
+background-color: #fff;
+margin: 0 auto;
+padding: 0 auto;
+width: 100%;
+z-index: 100;
+position: fixed;
+box-shadow: 0px 3px 3px 0px rgba(0,0,0,.10) !important;
+}
+p{
+ font-size: 18px;
+ font-weight: 510;
+}
+h1,h2,h3,h4{
+ font-family: 'Poppins';
+ font-weight: 600;
+}
+a{
+ text-decoration: none;
+ font-weight: 600;
+}
+.webViewIcon
+{
+border: solid #004d64 1px;
+width:45px;
+height: 45px;
+text-align: center;
+border-radius: 100%;
+background-color: #004d64;
+color: #fff;
+cursor: pointer;
+}
+.userIcons,.userIcons:active,.userIcons:focus,.userIcons:hover
+{
+text-decoration: none;
+font-size: 24px;
+color: #fff;
+line-height:41px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 1000 !important;
+}
+.header_container
+{
+ border-bottom: solid #004d64 1px;
+ box-shadow: 0px 0.7px 0.8px #004d64 !important;
+}
+.dropdown-menu
+{
+border: none !important;
+top: 130%;
+border-radius: 0px;
+cursor: pointer;
+margin-top: 15px;
+color: #000000 !important;
+font-weight: 600 !important;
+margin-left: -300%;
+box-shadow: 0px 0.7px 0.8px #004d64 !important;
+}
+.dropdown-menu a,.dropdown-menu a:hover,.dropdown-menu a:focus,.dropdown-menu a:active{
+font-size: 18px;
+color: #000000 !important;
+font-weight: 600 !important;
+text-align: center !important;
+background-color: #fff !important;
+}
+.brandLogo
+{
+ font-size: 28px;
+ font-family: 'Poppins';
+ font-weight: bold !important;
+ color: #000000 !important;
+ text-align: center;
+ text-decoration: none;
+ padding: 15px;
+}
+.sign-up {
+ width: 150px;
+ padding: 15px !important;
+ height: 45px;
+ text-align: center;
+ border-radius: 25px;
+ font-family: 'Poppins';
+ font-size: 16px !important;
+ font-weight: 800;
+ line-height: 11px;
+ color: #004d64 !important;
+ background-color: #fff;
+ border: 2px solid #004d64 !important;
+ letter-spacing: 1.5px;
+ text-decoration: none;
+ /* box-shadow: 0 0 0 0.2rem rgba(58,176,195,.5); */
+}
+.sign-up:hover {
+ color: #fff !important;
+ background-color: #004d64;
+ border: 2px solid #004d64;
+}
+
+.sign-up:focus {
+ color: #fff !important;
+ background-color: #004d64;
+ border: 2px solid #004d64;
+ outline: none;
+ box-shadow: none;
+}
+
+.sign-up:active {
+ color: #fff !important;
+ background-color: #004d64 !important;
+ border: 2px solid #004d64 !important;
+}
+.card-btn, .card-btn:focus,.card-btn:active,.card-btn:hover{
+ width: 150px;
+ padding: 15px !important;
+ height: 45px;
+ border-radius: 25px;
+ font-size: 16px;
+ line-height: 11px;
+ text-align: center;
+ font-family: 'Poppins';
+ color: #fff !important;
+ background-color: #004d64;
+ border: 1px solid #004d64;
+ font-weight: bold;
+ letter-spacing: 1.5px;
+ margin-right: 15px;
+}
+.footer-text
+{
+ font-size: 14px;
+ color: #000000;
+ font-weight: 600 !important;
+ font-family: 'Poppins';
+ line-height: 36px;
+ text-align: center;
+}
+.footerBorder
+{
+ border-top: solid 2px #004d64;
+}
+
+
+
+.formBox
+{
+ text-align: center;
+ width: 100%;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+.formBox form{
+ padding: 15px;
+}
+.formBox form h2{
+ font-size: 36px;
+ font-family: 'Poppins';
+ color: #000000;
+ line-height: 41px;
+}
+.formBox form input,.formBox form input:focus,.formBox form input:active,.formBox form input:hover{
+ width: 70%;
+ margin-top: 25px;
+ height: 45px;
+ font-size: 16px;
+ color: #000000;
+ font-weight: 700 !important;
+ text-align: left;
+ padding: 15px;
+ border: solid #004d64 2px;
+ border-radius: 25px;
+ background-color: #fff;
+ outline: none !important;
+}
+.formBox form input::-webkit-input-placeholder { /* Edge */
+  background-color: #fff !important;
+  color: #000000 !important;
+   font-weight: bold !important;
+}
+.formBox form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ background-color: #fff !important;
+ color: #000000 !important;
+ font-weight: bold !important;
+}
+
+.formBox form input::placeholder {
+ background-color: #fff !important;
+ color: #000000 !important;
+ font-weight: bold !important;
+}
+.formBox form p{
+ font-size: 16px !important;
+ text-align: center;
+ font-family: 'Poppins';
+ color: #000000 !important;
+ font-weight: bold !important;
+ line-height: 41px;
+}
+.formBox form p span{
+ color: #004d64 !important;
+ cursor: pointer;
+ font-weight: 1000 !important;
+}
+.formBox .formbutton
+{
+      border: solid 2px #004d64 !important;
+      background-color: #004d64 !important;
+      color: #fff !important;
+      text-align: center !important;
+      font-size: 18px !important;
+      font-family:  'Poppins';
+      line-height: 11px !important;
+      font-weight: bold !important;
+}
+.otpInput
+{
+ text-align: center !important;
+ padding: 5px;
+}
+.otpInput input{
+ border: solid #004d64 2px !important;
+ border-radius: 0px !important;
+ width: 40px !important;
+ height: 40px !important;
+ color: #000000 !important;
+ font-size: 18px !important;
+ font-family: 'Poppins';
+ padding: 0px !important;
+ font-weight: 600 !important;
+}
+
+.cardBody .card-title
+{
+ font-size: 21px;
+ text-align: left;
+ font-family:'Poppins';
+ color: #000000;
+ font-weight: bold !important;
+}
+.cardBody p{
+ font-size: 16px !important;
+ text-align: justify;
+ opacity: 1 !important;
+ font-weight: 600 !important;
+ color: #000000 !important;
+}
+.cardBody .colLittle
+{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+.formbutton2
+{
+ border-radius: 25px !important;
+ background-color: #004d64 !important;
+ border:solid #004d64 2px !important;
+ color: #fff !important;
+ font-size: 14px !important;
+ font-weight: 1000 !important;
+}
+.formbutton3{
+ border-radius: 25px !important;
+ background-color: #fff !important;
+ border:solid #004d64 2px !important;
+ color: #004d64 !important;
+ font-size: 14px !important;
+ font-weight: 1000 !important;
+ margin-left: 5px;
+}
+.form-group label{
+    width: 100%;
+    text-align: left !important;
+    font-size: 16px !important;
+    color: #000000 !important;
+    font-family: 'Poppins';
+    font-weight: bold !important;
+}
+.form-group input{
+ width: 100% !important;
+}
+
+/* src/components/GoogleAuthCard.css */
+.auth-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+}
+
+.auth-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.auth-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.google-login-button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.google-login-button:hover {
+  background-color: #357ae8;
+}
+
+/* src/components/NavBar.css */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ffffff;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logout-button {
+  background-color: #ff4b4b;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff6f6f;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.date {
+  font-size: 0.9em;
+  color: #666;
+}

@@ -1,0 +1,423 @@
+/* src/components/GoogleAuthCard.css */
+.auth-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+}
+
+.auth-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.auth-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.google-login-button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.google-login-button:hover {
+  background-color: #357ae8;
+}
+
+
+/* css */
+.calculateButton {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.calculateButton:hover {
+  background-color: #218838;
+}
+.conditionContainer {
+  margin-top: 20px;
+}
+
+.conditionRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.select,
+.input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f7f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+}
+
+.audienceSize {
+  font-size: 20px;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* global.css */
+
+.Campaign {
+  /* Base Styles */
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Campaign form {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Campaign form h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Campaign form label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.Campaign form input[type="text"],
+.Campaign form select,
+.Campaign form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.Campaign form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Campaign form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.Campaign .Toastify__toast--success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.Campaign .Toastify__toast--error {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* global.css */
+
+/* Parent class for CampaignList */
+.CampaignList {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+.CampaignList h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* global.css */
+
+/* Parent class for CampaignList */
+.CampaignList {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Title Styling */
+.CampaignList h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4CAF50; /* Green color for header */
+  margin-bottom: 30px;
+}
+
+/* Campaign Container */
+.campaign-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Campaign Card */
+.campaign-card {
+  background-color: #ffffff;
+  border: 1px solid #dce1e8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Campaign Name */
+.campaign-name {
+  font-size: 1.6rem;
+  color: #007bff; /* Blue for campaign name */
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+/* Campaign Field */
+.campaign-field {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.campaign-field strong {
+  color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .CampaignList {
+      padding: 10px;
+  }
+
+  .campaign-card {
+      padding: 15px;
+  }
+
+  .campaign-name {
+      font-size: 1.4rem;
+  }
+
+  .campaign-field {
+      font-size: 0.9rem;
+  }
+}
+
+/* global.css */
+
+/* Parent class for Audience List */
+.AudienceList {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  color: #333;
+}
+
+.AudienceList h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4CAF50; /* Green for header */
+  margin-bottom: 30px;
+}
+
+/* Card container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Segment Card */
+.segment-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.segment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Segment Details */
+.segment-details {
+  margin-bottom: 20px;
+}
+
+.segment-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.segment-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.user-list {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.user-list li {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Actions Section */
+.actions {
+  text-align: center;
+}
+
+.action-btn,
+.send-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover,
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Message Input */
+.message-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.message-input label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.message-input input {
+  width: 60%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .AudienceList {
+      padding: 10px;
+  }
+
+  .segment-card {
+      padding: 15px;
+  }
+
+  .segment-title {
+      font-size: 1.3rem;
+  }
+
+  .user-list li {
+      font-size: 0.85rem;
+  }
+
+  .message-input input {
+      width: 80%;
+  }
+}
